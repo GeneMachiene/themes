@@ -25,8 +25,14 @@
 </div>
 
 <style>
+  .controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .qrContainer{
     display: flex;
+    height: fit-content;
     flex-direction: column;
     background-color: rebeccapurple;
     border-radius: 10px;
@@ -34,13 +40,11 @@
     padding: 10px;
     font-weight: 900;
     color: rgb(255, 255, 255);
-    height: 200px;
   }
   .qr{
-    height: 150px;
-    width: 150px;
     border-radius: 15px;
     margin-top: 6px;
+    height: fit-content;
   }
   .newgame{
     grid-row: 1 / 6;
@@ -58,6 +62,7 @@
     max-height: 60px;
     font-weight: 400;
     font-size: large;
+    margin-bottom: 10px;
     color: whitesmoke;
   }
   .reset:hover{
@@ -71,19 +76,13 @@
     border-radius: 10px;
     margin-bottom: 10px;
   }
-  .controls,.blue,.red{
-    height: 200%;
+  .blue,.red{
     border-radius: 10px;
     padding: 20px 4px;
     margin-bottom: 10px;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .blue,.red{
-    height: 40%;
+    height: 100px;
     color: white;
     font-size: x-large;
     font-weight: 500;
@@ -111,11 +110,11 @@
     flex-direction: column;
     align-items: center;
     width: 20%;
-    padding: 24px 24px;
+    padding: 24px;
     background-color: rgb(30, 30, 30);
     box-shadow: -15px 0px 50px;
+
     background-image: url('https://64.media.tumblr.com/b772a97b16e120cb5cbaa5c70f266892/feb5328e15bd343c-64/s540x810/a8e5fd4dd2f3232dab1d05619e147618e0c90b67.pnj');
-    
     background-size: cover;
     background-blend-mode: color-burn;
   }
