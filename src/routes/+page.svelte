@@ -140,7 +140,7 @@
   let cards = []
   let bScore = 0
   let rScore = 0
-  let url = window.location.href
+  let url = import.meta.env.VITE_API_URL
   let board = ""
 
   function shuffle(array) {
